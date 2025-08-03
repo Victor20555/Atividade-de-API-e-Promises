@@ -1,0 +1,390 @@
+/* Reset CSS */
+
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS da página */
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter';
+}
+
+/* configurando o header */
+
+header {
+    background-color:#415FCE;
+    height: 139px;
+    display: flex;
+    align-items: center; 
+    padding: 0 40px;
+}
+
+/* configurando a imagem do header */
+
+.logo {
+    width: 110px;
+    height: 99px;
+}
+
+.titulo {
+    display: flex;
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 0;
+    color: black;
+    justify-content: center;
+    transform: translateX(8%);  
+}
+
+.modoadm {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    background-color: #1F9B5F;
+    border-radius: 24px;
+    color: white;
+    padding: 10px 32px 10px 32px;
+}
+
+.modoadm img {
+    width: 24px;
+    height: 24px;
+}
+
+.modoadm h2 {
+    font-size: 20px; 
+    font-weight: 500;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* botão de adicionar */
+
+.btn-adcionar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 69px 28px 69px;
+}
+
+.btn-adcionar a {
+    text-decoration: none;
+}
+
+.adicionar {
+    border: none;      
+    border-radius: 8px;
+    padding: 10px 20px;  
+    background: #1F9B5F;
+    color: white;
+    font-weight: 700;            
+    font-size: 40px;
+    width: 1310px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.adicionar:hover {
+    background-color: #1a7f4b;
+}
+
+/* estilizando as roupas */
+
+.roupas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 32px 10%;
+    justify-items: center;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 32px;
+}
+
+.imagem-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.produto-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0 10px;
+    pointer-events: none; 
+}
+
+.card-top .rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    pointer-events: all;
+}
+
+.card-top .rating img {
+    width: 16px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    pointer-events: all;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon.red {
+    background-color: red;
+}
+
+.icon.blue {
+    background-color: #3B5998;
+}
+
+/* Parte inferior azul */
+.card-info {
+    background-color: #1B3C9B;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-info h3 {
+    color: #91DA51;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.descricao {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.preco {
+    color: #91DA51;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+
+/* footer */
+
+footer {
+    background:#FCF7F8;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 69px 28px 69px;
+}
+
+.endereco h2 {
+    color: #4E8098;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2; 
+}
+
+.endereco { 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.endereco p {
+    color: #274553;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.contato h2 {
+    color: #4E8098;
+    font-size: 24px;
+    font-weight: 400;
+    
+    line-height: 1.2;
+}
+
+.contato a {
+    color: #274553;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 8px;
+
+}
+.redes-sociais {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.copyright {
+    background: #415FCE;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 34px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.pagina-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #C4C4C4;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.pagina-btn.active {
+    background: #1F9B5F;
+    color: #fff;
+}
+
+.paginacao-arrow {
+    background: none;
+    border: none;
+    color: #1F9B5F;
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    transition: color 0.2s;
+}
+
+.paginacao-arrow:disabled {
+    color: #C4C4C4;
+    cursor: default;
+}

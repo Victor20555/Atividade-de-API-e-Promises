@@ -1,0 +1,272 @@
+/* Reset CSS */
+
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS da página */
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter';
+}
+
+/* configurando o header */
+
+header {
+    background-color:#415FCE;
+    height: 139px;
+    display: flex;
+    align-items: center; 
+    padding: 0 40px;
+}
+
+/* configurando a imagem do header */
+
+.logo {
+    width: 110px;
+    height: 99px;
+}
+
+.titulo {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: black;
+    margin: 0;
+    justify-content: center;
+    transform: translateX(8%);
+}
+
+.modoadm {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    background-color: #1F9B5F;
+    border-radius: 24px;
+    color: white;
+    padding: 10px 32px 10px 32px;
+}
+
+.modoadm img {
+    width: 24px;
+    height: 24px;
+}
+
+.modoadm h2 {
+    font-size: 20px; 
+    font-weight: 500;
+    color: white;
+}
+
+header a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+  background: #247BB1;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.formulario h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  width: 460px;
+  background: #F0EBEB;
+
+}
+
+form textarea {
+  resize: none;
+  height: 35px;
+}
+
+textarea.full-width {
+    grid-column: auto;
+    width: 100%; 
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 8px 25px 8px 25px;
+  background: #1F9B5F;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 24px;
+}
+/* footer */
+
+footer {
+    background:#FCF7F8;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 69px 28px 69px;
+}
+
+.endereco h2 {
+    color: #4E8098;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2; 
+}
+
+.endereco { 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.endereco p {
+    color: #274553;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.contato h2 {
+    color: #4E8098;
+    font-size: 24px;
+    font-weight: 400;
+    
+    line-height: 1.2;
+}
+
+.contato a {
+    color: #274553;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 8px;
+
+}
+.redes-sociais {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.copyright {
+    background: #415FCE;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 34px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

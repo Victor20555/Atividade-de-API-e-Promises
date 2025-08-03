@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adicionar.css">
+    <title>Adicionar peças</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="../imagens/logoheader.png" alt="Lobo do header" class="logo">
+
+
+       <a href="../HomePage/HomePage.html">
+            <h1 class="titulo">Roup{IN}nha</h1>
+        </a>
+
+
+        <div class="modoadm">
+            <img src="/imagens/adm.png" alt="Ícone admin">
+            <h2>Modo administrador</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Adicionar nova peça ao estoque</h2>
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nome">Nome da peça:</label>
+                        <input type="text" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="preco">Preço:</label>
+                        <input type="text" id="preco" placeholder="Preço">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imagem">Image:</label>
+                        <input type="text" id="imagem" placeholder="Imagem">
+                    </div>
+                    <div class="form-group">
+                        <label for="categorias">Categorias:</label>
+                        <input type="text" id="categorias" placeholder="Categorias">
+                    </div>
+
+                    <div class="form-group textarea-group full-width">
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" placeholder="Descrição" class="full-width"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="avaliacao">Avaliação:</label>
+                        <input type="text" id="avaliacao" placeholder="Avaliação">
+                    </div>
+                </div>
+
+                <button type="submit">Criar peça</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="infos">
+            <div class="endereco">
+                <h2>Endereço</h2>
+                <p>Av. Milton Tavares de Souza,<br> s/n - Sala 115 B - Boa Viagem,<br> Niterói - RJ<br> CEP: 24210-315
+                </p>
+            </div>
+            <div class="contato">
+                <h2>Fale conosco</h2>
+                <a href="mailto:contato@injunior.com.br">contato@injunior.com.br</a>
+                <div class="redes-sociais">
+                    <a href="#"><img src="../imagens/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../imagens/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../imagens/linkedin.png" alt="Linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© Copyright 2025. IN Junior. Todos os direitos reservados. Niterói, Brasil</p>
+        </div>
+    </footer>
+    <script src="adicionar.js"></script>
+</body>
+
+</html>
